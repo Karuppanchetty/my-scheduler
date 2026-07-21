@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to myScheduler</title>
+    <link rel="stylesheet" href="style.css?v-1.1">
+</head>
+
+<body>
+    <header>
+        <h1>Task Scheduler</h1>
+        <p>Organize your Day. Stay on Track!!</p>
+    </header>
+    <main class="schedulerContainer">
+        <!--Section 1: Add Task Form-->
+        <section class="taskFormSection">
+            <h2>Add what you need to do..</h2>
+            <form id="taskForm">
+                <div class="formGroup">
+                    <label for="taskTitle">Task Name</label>
+                    <input type="text" id="taskTitle" placeholder="eg. do this/ do that" required>
+                </div>
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="startTime">Start Time</label>
+                        <input type="time" id="startTime" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="endTime">End Time</label>
+                        <input type="time" id="endTime" required>
+                    </div>
+                </div>
+                <button type="submit" id="addBtn">Click to Submit</button>
+            </form>
+        </section>
+        
+        <!--Section 2: View Task List-->
+        <section class="taskListDisplay">
+            <h2>Today's Schedule</h2>
+            <div id="taskList" class="taskList">
+                <p class="emptySpace">No tasks Scheduled yet. Please schedule one.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
