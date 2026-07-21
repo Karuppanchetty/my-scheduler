@@ -1,0 +1,68 @@
+
+### 1. Global Reset (`*`)
+
+* **`margin: 3px; padding: 2px;`** $\rightarrow$ Adds a tiny 3px outer and 2px inner space to **every single element** on the page.
+* 💡 *Tip:* Usually, developers set these to `0` so elements don't get unwanted default spacing.
+* **`box-sizing: border-box;`** $\rightarrow$ Keeps element width fixed regardless of padding/border.
+* **`font-family`** $\rightarrow$ Sets the page font to Segoe UI (with fallbacks).
+
+---
+
+### 2. Layout Base (`body`)
+
+* **`background-color: #0f172a;`** $\rightarrow$ Dark navy background.
+* **`color: #f8fafc;`** $\rightarrow$ Off-white text color.
+* **`display: flex; flex-direction: column; align-items: center;`** $\rightarrow$ Stacks page sections vertically and centers everything horizontally down the page.
+
+---
+
+### 3. Main Wrapper (`.schedulerContainer`)
+
+* **`width: 100%; max-width: 600px;`** $\rightarrow$ Makes the app responsive (shrinks on mobile, caps at `600px` on desktop).
+* **`gap: 2rem;`** $\rightarrow$ Creates space between child sections.
+
+---
+
+### 4. Cards & Sections (`.taskFormSection`, `.taskListDisplay`)
+
+* **`background-color: #1e293b;`** $\rightarrow$ Dark blue card background.
+* **`border: 1px solid #334155;`** $\rightarrow$ Subtle slate-gray outline.
+* **`border-radius: 12px;`** $\rightarrow$ Rounded corners.
+* **`padding: 1.5rem;`** $\rightarrow$ Inner space inside cards.
+* **`box-shadow`** $\rightarrow$ Creates a soft blue glow/shadow underneath the cards.
+
+---
+
+### 5. Multi-Column Layout (`.formRow`)
+
+* **`display: grid; grid-template-columns: 1fr 1fr;`** $\rightarrow$ Splits inputs into 2 equal-width columns side-by-side.
+* **`gap: 1rem;`** $\rightarrow$ Space between grid items.
+
+---
+
+### 6. Inputs & Focus States (`input[...]`)
+
+* **`width: 100%;`** $\rightarrow$ Fills parent width.
+* **`background-color: #0f172a;`** $\rightarrow$ Dark inner box.
+* **`transition: border-color 0.2s ease;`** $\rightarrow$ Smooth transition when clicked.
+* **`:focus`** $\rightarrow$ Highlights border light blue (`#38bdf8`) on click/type.
+
+---
+
+### 7. Action Button (`button`)
+
+* **`width: fit-content;`** $\rightarrow$ Shrinks button size to match button text.
+* **`display: block; margin: 1rem auto 0;`** $\rightarrow$ Centers the button horizontally and adds top spacing.
+* **`:hover`** $\rightarrow$ Darkens blue background on mouse hover.
+
+---
+
+## ⚠️ 3 Quick Things to Check in Your Code:
+
+
+
+
+2. **Global Margin (`*`):**
+Setting `margin: 3px` on `*` gives *every* element (inputs, text, body, sections) an extra 3px outer edge. Changing `* { margin: 0; padding: 0; }` will give you precise control over spacing.
+3. **Button Border:**
+Browsers add a default gray border to buttons. Adding `border: none;` inside `button { ... }` will make your button look clean and modern!

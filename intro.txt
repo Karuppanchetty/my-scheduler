@@ -1,0 +1,9 @@
+We are going to build an application to maintain my daily tasks and probably track the same.
+Surfed around for some task scheduler applications and it did not workout for me. Also, since long I too doesnot have any plans.
+Hence thought of dropping on to a plan to build my own application. But the first one, maybe. From scratch, that is wat km afraid of. But eager as well.
+
+Hers is my stack plan,.
+
+Frontend: HTML, CSS, JavaScript, react
+backend: Python, flask
+Database: SQLite

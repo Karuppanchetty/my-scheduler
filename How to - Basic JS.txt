@@ -1,0 +1,27 @@
+JavaScript Overview
+taskForm Event Listener: Intercepts form submission, captures input values, and generates a new task object with a unique timestamp ID (Date.now()).
+
+tasks Array: Acts as the central state holding all active schedule items in memory.
+
+renderTasks() Function: Clears the existing DOM list, sorts tasks chronologically by start time, and dynamically injects task cards into the page.
+
+Dynamic Card Construction: Generates HTML strings for each task, appending a dedicated delete button pre-wired with the item's unique ID.
+
+deleteTask(id) Function: Prompts for confirmation and uses JavaScript's .filter() method to remove the matching task from the array.
+
+Local Storage Integration: saveTasksToStorage() and loadTasksFromStorage() keep your schedule saved in the browser across page refreshes.
+
+DOMContentLoaded Event: Automatically triggers data loading from Local Storage as soon as the HTML document finishes loading.
+
+CSS & Delete Button Styling Changes
+ID Selector Switch (#deleteBtn): Shifted targeting from class (.deleteBtn) to ID (#deleteBtn) to give the rule highest CSS specificity over global button styles.
+
+Margin Reset (margin: 0): Stripped away default top/auto margins inherited from generic button rules to ensure perfect flexbox alignment.
+
+Transparent Base State: Applied a transparent background with a red border (#ef4444) and red text for a subtle, clean default appearance.
+
+Hover State Contrast: Configured #deleteBtn:hover to fill with solid red (#ef4444) and flip the "X" text to bright white (#ffffff).
+
+Smooth Transitions: Added transition: all 0.2s ease to animate the background color shift seamlessly when hovered.
+
+Flexbox Snap: Leveraged .taskCard's justify-content: space-between to lock task text on the left and snap the delete button cleanly to the right margin.

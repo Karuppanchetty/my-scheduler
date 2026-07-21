@@ -1,0 +1,49 @@
+Structure of an HTML Document
+
+<!DOCTYPE html> — Tells the browser to interpret and render the document using modern HTML5 rules.
+<html> — The root container wrapping all code for the entire web page.
+<head> — Holds background metadata, settings, and external stylesheet links that aren't visible on screen.
+<body> — The main container holding all visible text, layout sections, forms, and elements on the page.
+
+Metadata Tags (Inside <head>)
+
+<meta charset="UTF-8"> — Ensures special characters, symbols, and emojis display correctly across browsers.
+<meta name="viewport" content="..."> — Sets page width to match device screens for mobile responsiveness.
+<title> — Defines the headline text displayed on the browser tab or bookmark label.
+<link rel="stylesheet" href="..."> — Connects an external CSS file (style.css) to style and layout the HTML.
+
+Page Layout Tags
+
+<header> — Groups introductory header elements like primary page titles, subtitles, and logos.
+<main> — Marks the core, primary content area unique to this specific page.
+<section> — Defines a logical, standalone group of related content (e.g., a form or display panel).
+<div> — A generic box container used to group and style related elements together.
+
+Content & Heading Tags
+
+<h1> — The primary top-level heading of the page (should only be used once per page).
+<h2> — A secondary heading used for section titles inside the page layout.
+<p> — Defines a standard block of paragraph text.
+
+Form & User Input Tags
+
+<form> — Encloses interactive form controls to capture and collect user inputs.
+<label> — Defines readable title text for an input control (links directly to inputs via for="...").
+<input> — Creates an interactive input field for users to enter data.
+<button> — Creates a clickable button to trigger form submissions or JavaScript actions.
+
+External Logic Tags
+
+<script src="..."> — Connects an external JavaScript file (script.js) to power dynamic logic and features.
+
+Key HTML Attributes
+
+lang="en" — Specifies the primary language of the page content for search engines and screen readers.
+class="..." — Assigns a non-unique style label to target one or many elements in CSS or JavaScript.
+id="..." — Assigns a strictly unique identifier to target a specific element in JavaScript or CSS.
+for="..." — Binds a <label> to a specific <input> using that input's unique id.
+type="text" — Configures an <input> field to accept standard single-line text strings.
+type="time" — Configures an <input> field to display a built-in interactive time selector clock.
+type="submit" — Sets a <button> to trigger its parent form's submission event when clicked.
+placeholder="..." — Displays temporary hint text inside an input before the user starts typing.
+required — Prevents form submission if the user leaves that specific input field blank.

@@ -1,0 +1,33 @@
+The first step is to deal with index.html
+Why is it called index.html?
+
+The main reason we use index.html comes down to how web servers handle web requests when no specific file name is provided in the URL.
+
+1. The Default Landing Page Rule
+
+When you type a domain into a browser (e.g., [www.myschedulerapp.com](https://www.myschedulerapp.com)), you aren't asking for a specific file like [www.myschedulerapp.com/about.html](https://www.myschedulerapp.com/about.html).
+
+Web servers (like Apache, Nginx, or live preview tools in code editors) are pre-configured with a default fallback list. The top file on that list is almost universally index.html.
+
+Browser requests:  example.com/
+        │
+        ▼
+Server checks folder ──► Finds "index.html"? ──► YES ──► Displays page
+        │
+        └──────────────► NO ──► Shows 404 Error or directory list
+
+2. Historical Roots (Why the Word "Index"?)
+
+In the early days of the World Wide Web, if a directory on a server didn't have a default page, the server would literally list all the raw files in that folder like an index directory in a library.
+
+To prevent visitors from seeing raw folder contents, developers created a file named index.html to act as the cover page or table of contents for that directory.
+
+
+3. Clean URLs
+Using index.html keeps URLs clean and professional for users:
+
+Clean: [https://mysite.com/dashboard/](https://mysite.com/dashboard/)
+
+Unnecessary: [https://mysite.com/dashboard/index.html](https://mysite.com/dashboard/index.html)
+
+Because the server automatically serving index.html behind the scenes, you get a clean URL structure without forcing the user to type the exact filename.
