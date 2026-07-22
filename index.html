@@ -39,14 +39,31 @@
         <!--Section 2: View Task List-->
         <section class="taskListDisplay">
             <h2>Today's Schedule</h2>
+            <div class="filterControls">
+                <button class="filterBtn active" data-filter="all">All</button>
+                <button class="filterBtn" data-filter="active">Active</button>
+                <button class="filterBtn" data-filter="completed">Completed</button>
+            </div>
             <div id="taskList" class="taskList">
                 <p class="emptySpace">No tasks Scheduled yet. Please schedule one.</p>
             </div>
+            <div class="statsContainer">
+                <span id="taskStats">0 of 0 tasks completed (0%)</span>
+                <div class="progressBarBackground">
+                    <div id="progressBarFill" class="progressBarFill"></div>
+                </div>
+            </div>
+
+            
+
         </section>
+
+        
 
     </main>
 
     <script src="script.js"></script>
 
+    
 </body>
 </html>
