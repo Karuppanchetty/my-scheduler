@@ -1,6 +1,6 @@
 * {
-    margin: 3px;
-    padding: 2px;
+    margin: 1px;
+    padding: 1px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -104,3 +104,59 @@ input[type="time"]:focus{
     background-color: #f00505;
     color: #ffffff;
 }
+
+.statsContainer{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.progressBarBackground{
+    width:100%;
+    height:8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progressBarFill{
+    height: 100%;
+    width: 0%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+}
+
+.filterBtn {
+    background: none;
+    border: none;
+    color: #94a3b8 !important; 
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.filterBtn.active{
+    font-weight: bold;
+    color: #38bdf8 !important;
+    border-bottom: 2px solid #38bdf8;
+}
+
+.filterBtn:hover {
+    color: #ffffff !important;
+}
+
+.taskItem{
+    transition: all 0.25s ease;
+}
+
+.taskItem.completed span{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.taskItem.fade-out{
+    opacity: 0;
+    transform: translateX(20px);
+}
+
